@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>result</title>
+	</head>
+	<body>
+		<script>
+			var phy=90;
+			var che=85;
+			var math=80;
+			var com=75;
+			var bio=80;
+			var total=0;
+			var avg=0;
+			total=phy+che+math+com+bio;
+			document.write('Total marks is='+total+' Out of 500 <br>');
+			avg=total/5;
+			if(avg>=90 && avg<=100){
+				document.write('Your Grade is A');
+			}
+			if(avg>=80 && avg<90){
+				document.write('Your Grade is B');
+			}
+			if(avg>=70 && avg<80){
+				document.write('Your Grade is C');
+			}
+			if(avg>=60 && avg<70){
+				document.write('Your Grade is D');
+			}
+			if(avg>=40 && avg<60){
+				document.write('Your Grade is E');
+			}
+			if(avg<40){
+				document.write('Your Grade is F');
+			}
+
+		</script>
+	</body>
+</html>

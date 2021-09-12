@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Salary</title>
+	</head>
+	<body>
+		<script>
+			var b_salary=12000;
+			var gross_salary=0;
+			if(b_salary<=10000){
+				gross_salary=(b_salary*0.20)+(b_salary*0.80);
+			}
+			if(b_salary>=10001 && b_salary<=20000){
+				gross_salary=(b_salary*0.25)+(b_salary*0.90);
+			}
+			if(b_salary>=20001){
+				gross_salary=(b_salary*0.30)+(b_salary*0.95);
+			}
+			document.write('Gross Salary='+gross_salary);
+
+		</script>
+	</body>
+</html>

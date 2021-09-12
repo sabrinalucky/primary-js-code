@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>electricity bill</title>
+	</head>
+	<body>
+		<script>
+			var amount=63;
+			var subtotal=0;
+			var total=0;
+			if (amount<=50){
+				subtotal=amount*0.50;
+				}
+			if (amount>50 && amount<=150){
+				subtotal= (50*0.50)+(amount-50)*0.75;
+				}
+			if (amount>150 && amount<=250){
+				subtotal=(50*0.50)+(100*0.75)+(amount-150)*1.20;
+				}
+			if (amount>250){
+				subtotal=(50*0.50)+(100*0.75)+(100*1.20)+(amount-250)*1.50;
+				}
+			document.write('Subtotal='+subtotal+'<br>');
+			total=subtotal+(subtotal*0.20);
+			document.write('Total bill='+total);
+			
+		</script>
+	</body>
+</html>
